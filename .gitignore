@@ -15,7 +15,8 @@ db.sqlite31
 .enve
 env.txt
 *.env
-*/media
+*/media/
+**/media/
 
 app.txt
 server_db.conf
