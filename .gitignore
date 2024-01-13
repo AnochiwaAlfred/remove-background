@@ -1,0 +1,21 @@
+/env1
+/.venv
+
+*/__pycache__
+**/__pycache__
+***/__pycache__
+db.sqlite3
+db.sqlite31
+*/db.sqlite3
+# */migrations
+.venv/
+*/.venv
+*/.venv/
+.env
+.enve
+env.txt
+*.env
+*/media
+
+app.txt
+server_db.conf
