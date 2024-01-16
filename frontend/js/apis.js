@@ -20,7 +20,7 @@
 
 document.addEventListener("DOMContentLoaded", async function () {
   const user_id = localStorage.getItem("user_id");
-  const galleryItemsUrl = `http://127.0.0.1:8001/api/v1/clean_image/${user_id}/images/`;
+  const galleryItemsUrl = `http://127.0.0.1:8000/api/v1/clean_image/${user_id}/images/`;
 
   try {
     const response = await fetch(galleryItemsUrl, {
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         formData.append('user_id', userId);
 
         // Make the request:
-        const url = 'http://127.0.0.1:8001/api/v1/clean_image/image/process/';
+        const url = 'http://127.0.0.1:8000/api/v1/clean_image/image/process/';
         const response = await fetch(url, {
             method: 'POST',
             body: formData,
