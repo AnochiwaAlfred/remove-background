@@ -21,7 +21,7 @@ super_authenticator=None
 
 @router.delete("/deleteMigrations", auth=super_authenticator)
 def delete_migrations(request):
-    from remove_bg.settings import BASE_DIR
+    from plugins.settings import BASE_DIR
     import os, json, shutil
 
     BASE_DIR = os.path.abspath(os.path.join(BASE_DIR, os.pardir))
@@ -44,7 +44,7 @@ def delete_migrations(request):
 
 @router.delete("/deletePyCache", auth=super_authenticator)
 def delete_pycache_folders(request):
-    from remove_bg.settings import BASE_DIR
+    from plugins.settings import BASE_DIR
     import os, shutil
 
     BASE_DIR = os.path.abspath(os.path.join(BASE_DIR, os.pardir))
